@@ -30,10 +30,10 @@ jobs:
 
       - name: Run tests
         run: |
-          cd bayesian_optimizer
+
           pytest tests/ -v --tb=short
 
       - name: Run optimizer smoke test
         run: |
-          cd bayesian_optimizer
+
           python main.py --n-init 3 --n-iter 5 --out-dir /tmp/smoke
